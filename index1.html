@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stles1.css">
+    <title>Timeless Love: A Journey of Us</title>
+</head>
+<body>
+    <header>
+        <h1>Timeless Love: A Journey of Us</h1>
+    </header>
+    <main>
+        <p>" Through the years, we’ve built something truly special—something that time, distance, and challenges could never break. Your love has been my greatest gift, filling my days with warmth, laughter, and a sense of belonging I never knew I needed. Thank you for standing by me, for understanding me even when words fail, and for choosing to love me not just in the easy moments, but through every storm we’ve faced together. No matter how much time passes, my heart will always be yours, and I will continue to cherish every second we share. Here’s to us—our love, our journey, and the beautiful forever ahead of us."</p>
+
+        <div class="image-gallery">
+            <img class="hover-image" src="https://media.discordapp.net/attachments/1340408768294424675/1344924779366322217/Screenshot_20250228-122742_1.jpg?ex=67c2ae4e&is=67c15cce&hm=b040e188bc6212f4550c8b30393693bd3ee2c7dd2d3d4d4b608c0bc9d967f1db&=&format=webp&width=791&height=788" alt="Image 1">
+            <img class="hover-image" src="https://media.discordapp.net/attachments/1340408768294424675/1344926263734964234/Screenshot_20250228-135612_1.jpg?ex=67c2afb0&is=67c15e30&hm=1a2abcfb5698ff42339754e281ce7e80ad5cff0b9d90416e68c39a494300ea37&=&format=webp&width=414&height=684" alt="Image 2">
+            <img class="hover-image" src="https://media.discordapp.net/attachments/1340408768294424675/1344926264057659433/IMG_20220818_134401_208.webp?ex=67c2afb0&is=67c15e30&hm=65f886fe6a4bdec5e05cadd73626efaef6931d2c01983d0db949a502832411f5&=&format=webp&width=385&height=684" alt="Image 3">
+            <img class="hover-image" src="https://media.discordapp.net/attachments/1340408768294424675/1344927260133556286/Screenshot_20250228-140027_1.jpg?ex=67c2b09e&is=67c15f1e&hm=f523f9a9c4e9208c36b0abe0947bda93c295f3deb063f48e1561a6cce342f3a4&=&format=webp&width=451&height=350" alt="Image 4">
+            <img class="animated-image" src="https://media.discordapp.net/attachments/1340408768294424675/1344927835437142066/Lovepik_com-380523389-3d-doll-white-bear-cute-three-dimensional-cartoon-bear-dolls.png?ex=67c2b127&is=67c15fa7&hm=34f813500bbf8ebbcc120c99627b5c1e0cedf71be91b3fa2afacb07ec6c68bfe&=&format=webp&quality=lossless&width=788&height=788" alt="Top Left Design">
+        </div>
+    </main>
+    <footer>
+        <p id="current-date" style="text-align: center;"></p>
+        <p style="text-align: center;">I hope we can stay together forever.</p>
+    </footer>
+    <script>
+        const startDate = new Date("2022-06-18");
+        const currentDate = new Date();
+        const timeDifference = currentDate - startDate;
+        const dayDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        document.getElementById('current-date').innerText = dayDifference + " DAYS ! :)";
+    </script>zz
+
+    <style>
+        .animated-image {
+            animation: grow 2s infinite alternate;
+        }
+
+        @keyframes grow {
+            from {
+                transform: scale(0.5);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .hover-image {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</body>
+</html>
